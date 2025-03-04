@@ -62,8 +62,3 @@ def plot_function(data: List, function, x_min=-1, x_max=1):
 def random_0_1():
     return np.random.rand()
 
-def linear_congruential_generator(a, c, m, x0, n):
-    x = x0
-    for i in range(n):
-        x = (a * x + c) % m
-        yield x / m
